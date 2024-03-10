@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home_tab">
+
+    <fragment
+        android:id="@+id/navigation_home_tab"
+        android:name="com.dhairya.aapnidukan.BottamNavTabs.HomeTab"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home_tab" />
+
+    <fragment
+        android:id="@+id/navigation_categort_tab"
+        android:name="com.dhairya.aapnidukan.BottamNavTabs.CategoryTab"
+        android:label="@string/title_category"
+        tools:layout="@layout/fragment_category_tab" />
+
+    <fragment
+        android:id="@+id/navigation_cart_tab"
+        android:name="com.dhairya.aapnidukan.BottamNavTabs.CartTab"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart_tab" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.dhairya.aapnidukan.BottamNavTabs.Account"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
