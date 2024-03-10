@@ -6,23 +6,27 @@
     android:gravity="center">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/network"/>
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/network_logo"
+        android:layout_margin="@dimen/dim_5"
+        android:src="@drawable/network" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No Connection"
-        android:textSize="20sp"/>
+        android:layout_margin="@dimen/dim_5"
+        android:textSize="@dimen/font_size_18"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please Check you internet connectivity and try again"
-        android:textSize="16sp"/>
+        android:layout_margin="@dimen/dim_5"
+        android:textSize="@dimen/font_size_16"/>
     <Button
         android:id="@+id/btn_network_refresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_5"
         android:text="Retry"/>
 
 </LinearLayout>
